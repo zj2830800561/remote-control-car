@@ -1,0 +1,183 @@
+.page{
+  width: 750rpx;
+  height: 1500rpx;
+  background-color: #ddd;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  /* 相对定位 */
+  position: relative;
+}
+
+/*  总开关  */
+.switch_box{
+  width: 310rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aquamarine; */
+
+  /*  旋转90°  */
+  transform: rotate(-90deg);
+
+  /*绝对定位*/
+  position: absolute;
+  top: 37%;
+  left: -12%;
+}
+.main_switch_on{
+  display: flex;
+
+  /* Rounddued border */
+  border-radius: 9999rpx;
+
+  /* Size */
+  height: 32px;
+  width: 64px;
+
+  /* ON status */
+  background-color: #357edd;
+  border: 1px solid #357edd;
+
+  /* Push the circle to the right */
+  justify-content: flex-end;
+}
+.main_switch_off{
+  display: flex;
+
+  /* Rounded border */
+  border-radius: 9999px;
+
+  /* Size */
+  height: 32px;
+  width: 64px;
+
+  /* OFF status */
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+
+  /* Push the circle to the right */
+  justify-content: flex-start;
+}
+
+.label__input {
+  /* Hide the input */
+  display: none;
+}
+.label__circle {
+  /* Rounded border */
+  border-radius: 9999rpx;
+
+  /* Size */
+  width: 32px;
+
+  background-color: #fff;
+
+  /* OFF status */
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/*  方向键大盒子  */
+.direction_box{
+  /*绝对定位*/
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  width: 80%;
+  height: 80%;
+
+  width: 500rpx;
+  height: 500rpx;
+  /* background-color: black; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 左右方向键小盒子 */
+.left_and_right{
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.direction_button_forward{
+  /*  旋转90°  */
+  transform: rotate(180deg);
+}
+.direction_button_left{
+  /*  旋转90°  */
+  transform: rotate(90deg);
+}
+.direction_button_right{
+  /*  旋转90°  */
+  transform: rotate(-90deg);
+}
+/* 按键边框 */
+.triangle_selected{
+  width: 130rpx;
+  height: 130rpx;
+  border: 3rpx solid rgb(22, 218, 32);
+  border-radius: 30rpx;
+  display: flex;
+}
+.triangle{
+  width: 130rpx;
+  height: 130rpx;
+  border: 3rpx solid rgb(255, 255, 255);
+  border-radius: 30rpx;
+  display: flex;
+}
+
+/*  调速按钮  */
+.Speed_gear{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /*绝对定位*/
+  position: absolute;
+  top: 25%;
+  left: 30%;
+
+  /*  旋转90°  */
+  transform: rotate(-90deg);
+
+}
+.button_stop image{
+  width: 150rpx;
+  height: 150rpx;
+
+  /*绝对定位*/
+  position: absolute;
+  top: 15%;
+  left: 80%;
+
+  /*  旋转90°  */
+  transform: rotate(-90deg);
+}
+
+.bibi{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border: 3rpx solid #ddd;
+
+  /*绝对定位*/
+  position: absolute;
+  top: 5%;
+  left: 45%;
+
+  /*  旋转90°  */
+  transform: rotate(-90deg);
+}

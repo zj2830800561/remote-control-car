@@ -1,0 +1,24 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "控制界面",
+          "pathName": "pages/ctrl/ctrl",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

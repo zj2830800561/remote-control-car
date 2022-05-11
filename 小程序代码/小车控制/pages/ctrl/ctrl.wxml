@@ -1,0 +1,48 @@
+<view class="page">
+
+  <view class="direction_box">
+    <view class="direction_button_forward" bindtap="forward_click">
+        <image hidden="{{forward == 'on'}}" class="{{forward == 'on' ? 'triangle_selected' : 'triangle'}}"  src="/images/off.png"></image>
+        <image hidden="{{forward == 'off'}}" class="{{forward == 'on' ? 'triangle_selected' : 'triangle'}}"  src="/images/on.png"></image>
+    </view>
+    <view class="left_and_right">
+      <view class="direction_button_right" bindtouchstart="right_touchstart"
+      bindtouchend="right_touchend">
+          <image hidden="{{right == 'on'}}" class="{{right == 'on' ? 'triangle_selected' : 'triangle'}}"  src="/images/off.png"></image>
+          <image hidden="{{right == 'off'}}" class="{{right == 'on' ? 'triangle_selected' : 'triangle'}}"  src="/images/on.png"></image>
+      </view>
+      <view class="direction_button_left" bindtouchstart="left_touchstart"
+      bindtouchend="left_touchend">
+          <image hidden="{{left == 'on'}}" class="{{left == 'on' ? 'triangle_selected' : 'triangle'}}"  src="/images/off.png"></image>
+          <image hidden="{{left == 'off'}}" class="{{left == 'on' ? 'triangle_selected' : 'triangle'}}"  src="/images/on.png"></image>
+      </view>
+    </view>
+    <view class="direction_button_backward" bindtap="backward_click">
+        <image hidden="{{backward == 'on'}}" class="{{backward == 'on' ? 'triangle_selected' : 'triangle'}}"  src="/images/off.png"></image>
+        <image hidden="{{backward == 'off'}}" class="{{backward == 'on' ? 'triangle_selected' : 'triangle'}}"  src="/images/on.png"></image>
+    </view>
+  </view>
+
+  <view class="switch_box">
+    <text style="margin-right:50rpx;margin-top: 10rpx;">遥控模式</text>
+    <view 
+    class="{{main_switch == 'on' ? 'main_switch_on' : 'main_switch_off'}}"
+    bindtap="change_main_switch_status">
+        <checkbox class="label__input" checked="true"></checkbox>
+        <view class="label__circle"></view>
+      </view>
+  </view>
+
+  <view class="button_stop" bindtouchstart="stop_touchstart" bindtouchend="stop_touch_end">
+        <image hidden="{{stop == 'on'}}" src="/images/stopoff.png"></image>
+        <image hidden="{{stop == 'off'}}" src="/images/stopon.png"></image>
+  </view>
+  <view class="button_bibi" bindtap="bibi_click">
+      <image hidden="{{bibi == 'on'}}" class="bibi" src="/images/bibi.png"/>
+  </view>
+  <view class="Speed_gear" bindtap="change_speed_gear">
+    <button size="mini" plain="{{speed_gear == 'Middlespeed' ? '' : 'true'}}" type="{{speed_gear == 'Middlespeed' ? 'primary' : 'default'}}">中速</button>
+    <button size="mini" plain="{{speed_gear == 'Highspeed' ? '' : 'true'}}" type="{{speed_gear == 'Highspeed' ? 'warn' : 'default'}}">高速</button>
+  </view>
+
+</view>

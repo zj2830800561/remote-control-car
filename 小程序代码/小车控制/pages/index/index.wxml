@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view style="margin-top:20px;">
+
+<view style="text-align:center;">
+<p style="font-size:58rpx;">小车控制程序</p>
+
+  <view style="margin-top:150rpx;"><p>设备状态：{{device_status}}</p> </view>
+  <!-- <view style="margin-top:30px;">  <p>开关状态：{{powerstatus}}</p> </view>
+
+    <view style="margin-top:30px;">
+
+  <view style="margin-top:30px;"> <button bindtap="openclick" >打开</button>   </view>
+  <view style="margin-top:30px;"> <button bindtap="closeclick" >关闭</button>
+  </view>
+    </view> -->
+</view>
+
+  <view class="box" bindtap="change_mode" style="margin-top:150rpx;">
+    <text >红外循迹</text>
+      <!-- Container -->
+    <view class="container">
+        <!-- Radio container -->
+        <view class="{{mode == 'hwxj' ? 'container__label__selected' : 'container__label'}}">
+            <view class="{{mode == 'hwxj' ? 'label__line__selected' : 'label__line'}}" />
+        </view>
+        <view class="{{mode == 'hwxj' ? 'container__label' : 'container__label__selected'}}">
+            <view class="{{mode == 'hwxj' ? 'label__line' : 'label__line__selected'}}" />
+        </view>
+        <!-- Other radio item -->
+        
+    </view>
+    <text>WIFI遥控</text>
+  </view>
+</view>
