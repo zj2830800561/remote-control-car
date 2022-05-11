@@ -14,3 +14,5 @@ MDK代码：
 
 小程序代码：  
 >用于控制小车的小程序源码，可上传至自己的小程序  
+  
+记录文档：https://aspiring-petalite-a06.notion.site/2e9c525a5a1e4bafb16c2419680b9280
